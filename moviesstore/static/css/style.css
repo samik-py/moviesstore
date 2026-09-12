@@ -41,3 +41,19 @@
   width: fit-content;
   max-height: 400px;
 }
+
+.img-card-200, .img-card-400, .max-width-100 {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card, .list-group-item, .navbar, .ms-footer-bottom {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 575.98px) {
+  .ms-footer-bottom span {
+    line-height: 1.5;
+  }
+}

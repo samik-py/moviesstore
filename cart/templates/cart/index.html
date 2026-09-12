@@ -11,6 +11,7 @@
       </div>
     </div>
     <div class="row m-1">
+      <div class="table-responsive">
       <table class="table table-bordered table-striped
         text-center">
         <thead>
@@ -32,9 +33,10 @@
           {% endfor %}
         </tbody>
       </table>
+      </div>
     </div>
     <div class="row">
-      <div class="text-end">
+      <div class="d-flex flex-column flex-sm-row flex-wrap justify-content-end gap-2">
         <a class="btn btn-outline-secondary mb-2"><b>Total to pay:</b> ${{ template_data.cart_total }}</a>
         {% if template_data.movies_in_cart|length > 0 %}
         <a href="{% url 'cart.purchase' %}"
